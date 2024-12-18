@@ -1,0 +1,218 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 32px;
+	color: #686868;
+}
+
+h2 {
+	font-size: 20px;
+	color: #535353;
+}
+
+p {
+	margin: 10px 0;
+	font-size: 14px;
+}
+
+.container,
+.container-2 {
+	margin: 2rem 0;
+	display: grid;
+	justify-items: end;
+	text-align: start;
+	position: relative;
+}
+
+.content,
+.content-2 {
+	width: 100%;
+	height: auto;
+}
+
+.content h1,
+.content-2 h1 {
+	padding-left: 1000px;
+}
+
+.item {
+	padding: 20px 0 20px 1000px;
+}
+
+.item:nth-child(3),
+.item-2:nth-child(3) {
+	background-color: #F5F4F9;
+}
+
+.item:nth-child(4) {
+	background-color: #5ac7fa;
+	color: #FFFFFF;
+}
+
+.item-2 {
+	padding: 20px 0;
+}
+
+h1,
+.item-2 {
+	padding-left: 400px;
+}
+
+.item-2:nth-child(4) {
+	background-color: #f35454;
+	color: #FFFFFF;
+}
+
+.image,
+.image-2 {
+	width: 500px;
+	position: absolute;
+	z-index: 3;
+}
+
+.image {
+	left: 340px;
+	bottom: 0;
+}
+
+.image-2 {
+	left: 900px;
+	top: 3px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.slider,
+.slider-2 {
+	width: 300px;
+	overflow: hidden;
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+	background-color: #222;
+	color: #fff;
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.container,
+	.container-2 {
+		max-width: 760px;
+		height: auto;
+		position: relative;
+	}
+
+	.content h1 {
+		padding-left: 400px;
+	}
+
+	.content-2 h1 {
+		padding-left: 20px;
+	}
+
+	.item {
+		padding-left: 400px;
+	}
+
+	.item-2 {
+		padding-left: 20px;
+	}
+
+	.image {
+		width: 450px;
+		left: 0;
+		margin: auto;
+	}
+
+	.image-2 {
+		width: 450px;
+		left: 300px;
+		bottom: -35px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	footer {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	.container,
+	.container-2 {
+		max-width: 320px;
+		height: auto;
+		margin: 0;
+	}
+
+	.item,
+	.item-2 {
+		padding-left: 20px;
+	}
+
+	.content h1 {
+		padding-left: 20px;
+	}
+
+	.image,
+	.image-2 {
+		position: static;
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.slider>a,
+	.slider-2>a {
+		display: inline-flex;
+		width: 1rem;
+		height: 1rem;
+		background: #535353;
+		text-decoration: none;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		margin: 0.1rem 0;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 14px;
+	}
+
+	p {
+		font-size: 10px;
+	}
+
+	footer {
+		font-size: 0.8rem;
+		padding: 0.5rem;
+		margin-top: 0;
+	}
+}
